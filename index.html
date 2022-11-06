@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
 
     <main>
@@ -16,15 +18,15 @@
 
                 <div class="flex">
                     <div class="title">
-                        <h1>STUDENTS GRDAE CALCY</h1>
+                        <h1>STUDENTS GRADE CALCULATOR</h1>
                     </div>
                     <div class="info">
-                        <input type="text" id="phy"  placeholder="PHYSICS">
-                        <input type="text" id="chem"  placeholder="CHEMISTRY">
+                        <input type="text" id="phy" placeholder="PHYSICS">
+                        <input type="text" id="chem" placeholder="CHEMISTRY">
                         <input type="text" id="math" placeholder="MATH">
-                        <input type="text" id="it"  placeholder="IT">
+                        <input type="text" id="it" placeholder="IT">
                         <button id="btn">SHOW PERCENTAGES</button>
-                    
+
                     </div>
                 </div>
                 <div>
@@ -32,11 +34,11 @@
                     <span id="pass"></span>
 
                 </div>
-               
-               
+
+
             </div>
-                
-            
+
+
         </div>
     </main>
 
@@ -48,30 +50,31 @@
         const button = document.getElementById("btn");
         const result = document.getElementById("result");
         const pass = document.getElementById("pass");
-        
-        button.addEventListener("click",(wd)=>{
 
-            const total = parseFloat(phy.value)+parseFloat(chem.value)+parseFloat(math.value)+parseFloat(it.value)
-            const percentage= (total/400)*100
-            if(percentage>35){
-                pass.style.color="green"
-                var x=pass.innerHTML ="You are Pass"
-                result.innerHTML =`Your total marks are ${total}/400 and Percentage is ${percentage}% ${x}.`
-               
-            }else if(percentage<35){
-                pass.style.color="red"
-                var x= pass.innerHTML ="You are fail"
-                result.innerHTML =`Your total marks are ${total}/400 and Percentage is ${percentage}% ${x}.`
+        button.addEventListener("click", () => {
+
+            const total = Number(phy.value) + Number(chem.value) + Number(math.value) + Number(it.value)
+            const percentage = (total / 400) * 100
+            if (percentage > 35) {
+                pass.style.color = "green"
+                var x = pass.innerHTML = "You have Passed"
+                result.innerHTML = `Your total marks are ${total}/400 and Percentage is ${percentage}% ${x}.`
+
+            } else if (percentage < 35) {
+                pass.style.color = "red"
+                var x = pass.innerHTML = "You have failed"
+                result.innerHTML = `Your total marks are ${total}/400 and Percentage is ${percentage}% ${x}.`
             }
 
-            
-            result.innerHTML =`Your total marks are ${total}/400 and Percentage is ${percentage}%.`
+
+            result.innerHTML = `Your total marks are ${total}/400 and Percentage is ${percentage}%.`
             console.log(total)
-            console.log(percentage+"%")
+            console.log(percentage + "%")
         })
     </script>
 
 
-    
+
 </body>
+
 </html>
