@@ -159,8 +159,6 @@ input:focus {
 @media (max-width:768px) {
 
     .card {
-
-
         flex-direction: column;
         margin: 10px;
         gap: 20px;
@@ -177,17 +175,6 @@ input:focus {
 
 @media (max-width:400px) {
 
-    input {
-
-        border: none;
-        background-color: transparent;
-        border-bottom: solid 1px #b1a7a6;
-        font-family: 'Black Han Sans', sans-serif;
-        color: white;
-        font-size: 10px;
-        margin-bottom: 20px;
-    }
-
     .card h1 {
 
         color: #27C4B6;
@@ -202,54 +189,8 @@ input:focus {
     }
 
     .card {
-
-        padding: 25px;
         text-align: center;
         display: flex;
         flex-direction: column;
-        gap: 10px;
     }
-
-    .title {
-
-        margin: 10px auto;
-    }
-
-    .info {
-
-        margin: 10px auto;
-    }
-
-    #btn {
-
-        font-size: 12px;
-    }
-
-    span {
-
-        position: absolute;
-        top: 290px;
-        right: 10px;
-        left: 10px;
-        bottom: 10px;
-        justify-content: center;
-        text-align: center;
-        font-size: 8px;
-
-
-    }
-
-    span#pass {
-
-        position: absolute;
-        top: 330px;
-        right: 10px;
-        left: 10px;
-        bottom: 10px;
-        justify-content: center;
-        text-align: center;
-        font-size: 8px;
-    }
-
-
 }
