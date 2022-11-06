@@ -175,19 +175,6 @@ input:focus {
 
 @media (max-width:400px) {
 
-    .card h1 {
-
-        color: #27C4B6;
-        max-width: 10 px;
-        margin-left: 20px;
-        animation-name: pulse;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        font-size: 18px;
-
-
-    }
-
     .card {
         text-align: center;
         display: flex;
