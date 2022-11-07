@@ -51,6 +51,22 @@
         const result = document.getElementById("result");
         const pass = document.getElementById("pass");
 
+        const inputs = document.querySelectorAll("input")
+
+        inputs.forEach((input) => {
+            input.onblur = () => {
+                if(!input.value.match(/^[0-9]+$/)){
+                    console.log("Incorrect format. Enter only numbers");
+                    button.setAttribute("disabled", "disabled");
+                    button.classList.add("disabledBtn");
+                }
+                else{
+                    button.removeAttribute("disabled");
+                    button.classList.remove("disabledBtn");
+                }
+            }
+        })
+
         button.addEventListener("click", () => {
 
             const total = Number(phy.value) + Number(chem.value) + Number(math.value) + Number(it.value)
