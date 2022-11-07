@@ -120,6 +120,9 @@ input:focus {
     font-size: 18px;
 
 }
+.disabledBtn{
+    color: #b1a7a6 !important;
+}
 
 @media (max-width: 1200px) {
     .container {
